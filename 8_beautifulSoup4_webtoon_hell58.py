@@ -25,3 +25,20 @@ for cartoon in cartoonsTitleList:
     title = cartoon.a.get_text()
     link = "https://comic.naver.com" + cartoon.a["href"]
     print(title, link)
+
+# 웹툰 평점 구하기
+total_rates = 0
+average_rate = 0
+count = 0
+
+cartoons = soup.find_all("div", attrs={"class":"rating_type"})
+for cartoon in cartoons:
+    rate = cartoon.find("strong").get_text()    # find() 이 내용 이해 안간다
+    total_rates += float(rate)
+    count += 1
+
+average_rate = total_rates / count
+print(average_rate)
+
+
+    
