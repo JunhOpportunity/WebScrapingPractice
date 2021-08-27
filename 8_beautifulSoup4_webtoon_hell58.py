@@ -39,6 +39,3 @@ for cartoon in cartoons:
 
 average_rate = total_rates / count
 print(average_rate)
-
-
-    
