@@ -1,5 +1,4 @@
 from selenium import webdriver
-
 browser = webdriver.Chrome()        # chromedriver.exe가 현재 폴더에 있다면 괄호 비워도 가능 / chromedriver.exe가 현재 폴더에 없다면 경로 적어주어야 함.
 
 # 네이버에서 활용을 통한 기본 개념 공부
