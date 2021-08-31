@@ -1,3 +1,4 @@
+# Headless solution 
 from selenium import webdriver
 
 # 크롬 브라우저를 띄우지 않고 내부적으로만 실행하게 하기
